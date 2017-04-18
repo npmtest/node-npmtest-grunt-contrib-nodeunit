@@ -1,1 +1,40 @@
-{     "devDependencies": {         "grunt-contrib-nodeunit": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-grunt-contrib-nodeunit",     "homepage": "https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [grunt-contrib-nodeunit (v1.0.0)](https://github.com/gruntjs/grunt-contrib-nodeunit#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-nodeunit.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-nodeunit) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-contrib-nodeunit": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit",
+    "keywords": [
+        "coverage",
+        "test",
+        "grunt-contrib-nodeunit"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_grunt_contrib_nodeunit.js",
+    "name": "npmtest-grunt-contrib-nodeunit",
+    "nameAlias": "npmtest_grunt_contrib_nodeunit",
+    "nameOriginal": "npmtest-grunt-contrib-nodeunit",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
