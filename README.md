@@ -1,6 +1,6 @@
 # npmtest-grunt-contrib-nodeunit
 
-#### test coverage for  [grunt-contrib-nodeunit (v1.0.0)](https://github.com/gruntjs/grunt-contrib-nodeunit#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-nodeunit.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-nodeunit) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit)
+#### basic test coverage for  [grunt-contrib-nodeunit (v1.0.0)](https://github.com/gruntjs/grunt-contrib-nodeunit#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-nodeunit.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-nodeunit) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-nodeunit)
 
 #### Run Nodeunit unit tests
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-contrib-nodeunit/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-grunt-contrib-nodeunit/build/coverage.html/index.html)
 
@@ -135,7 +135,8 @@
     "scripts": {
         "test": "grunt test && grunt jshint"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
